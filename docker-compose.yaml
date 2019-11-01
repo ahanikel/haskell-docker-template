@@ -1,0 +1,9 @@
+version: '2'
+services:
+  haskell-template:
+    build:
+      context: .
+      args:
+        - BINARY_PATH
+    image: ahanikel/haskell-template
+    command: /opt/haskell-template/haskell-template
